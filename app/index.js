@@ -1,15 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-var createReactClass = require('create-react-class');
-const Main = createReactClass({
-  render () {
-    return (
-      <p>Hello World!</p>
-    )
-  }
-})
+import routes from './config/routes'
+
 
 ReactDOM.render(
-  <Main />,
+  routes,
   document.getElementById('app')
 )
